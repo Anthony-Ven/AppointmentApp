@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    tools:context=".CreateAppointmentActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/textSectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="Appointment Form"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputAppointmentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:ems="10"
+            android:hint="Appointment Title"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="16dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@drawable/customborder"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textParticipantsAlert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="No participants"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonAddParticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add participants"
+            android:textAllCaps="false"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Schedule date"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textAppointmentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="[Date] "
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="[Start Time]"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" - "
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="[End Time]"
+                android:textSize="16dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSetSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Set Schedule"
+            android:textSize="16dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/buttonDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Done"
+            android:textSize="16dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textDataAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:text="Please input all the data above"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
